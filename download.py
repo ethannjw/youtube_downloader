@@ -1,8 +1,10 @@
 from pytube import YouTube
 import pytube
 import requests
+from selenium import webdriver
 from bs4 import BeautifulSoup
-from dict2xml import dict2xml
+
+driver = webdriver.Chrome(executable_path="chromedriver.exe", options=input_option)
 
 client = requests.session()
 
@@ -57,27 +59,30 @@ header = {
     'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryycVFZKL2n4VBei1F',
 }
 
+dummy_content = {'foo': "bar"}
 
 build_content = {
-    'TitlePart.Title': ("", title),
-    'video.contenturl.Text': ("", contenturl),
-    'video.thumbnail.Text': ("", thumbnail),
-    'video.description.Text': ("", description),
-    'video.creator.Text': ("", creator),
-    'video.created.Value': ("", created),
-    'video.length.Value': ("", length),
-    'video.views.Value': ("", views),
-    'video.subscribers.Value': ("", subscribers),
-    'video.likes.Value': ("", likes),
-    'video.dislikes.Value': ("", dislikes),
-    'returnUrl': ("", '/Admin/Contents/ContentItems'),
-    '__RequestVerificationToken': ("", csrf_token)
+    'TitlePart.Title': title,
+    'video.contenturl.Text': contenturl,
+    'video.thumbnail.Text': thumbnail,
+    'video.description.Text': description,
+    'video.creator.Text': creator,
+    'video.created.Value': created,
+    'video.length.Value': length,
+    'video.views.Value': views,
+    'video.subscribers.Value': subscribers,
+    'video.likes.Value': likes,
+    'video.dislikes.Value': dislikes,
+    'returnUrl': '/Admin/Contents/ContentItems',
+    '__RequestVerificationToken': csrf_token,
 }
-print(build_content)
+
+
 # post a new item
-res = client.post('http://54.255.34.84:5000/Admin/Contents/ContentTypes/video/Create?returnUrl=%2FAdmin%2FContents%2FContentItems', headers=header, data=build_content)
-res = client.post('http://54.255.34.84:5000/Admin/Contents/ContentTypes/video/Create?returnUrl=%2FAdmin%2FContents%2FContentItems', files=build_content)
-print(res.reason)
+#res = client.post('http://54.255.34.84:5000/Admin/Contents/ContentTypes/video/Create?returnUrl=%2FAdmin%2FContents%2FContentItems', headers=header, data=build_content)
+
+res = requests.post('http://54.255.34.84:5000/Admin/Contents/ContentTypes/video/Create?returnUrl=%2FAdmin%2FContents%2FContentItems', data=build_content, files=dummy_content )
+print(res.status_code)
 
     # try:
     #     YouTube(url).streams.get_by_itag('22').download()
