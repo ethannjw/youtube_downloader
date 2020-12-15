@@ -1,0 +1,63 @@
+https://www.youtube.com/watch?v=WeegJYM1mmo
+
+
+
+multipart/form-data; boundary=----WebKitFormBoundaryycVFZKL2n4VBei1F
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="TitlePart.Title"
+
+test contentlsdkfnlaskednf
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.contenturl.Text"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.thumbnail.Text"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.description.Text"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.creator.Text"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.created.Value"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.length.Value"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.views.Value"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.subscribers.Value"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.likes.Value"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="video.dislikes.Value"
+
+
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="submit.Publish"
+
+submit.Publish
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="returnUrl"
+
+/Admin/Contents/ContentItems
+------WebKitFormBoundaryycVFZKL2n4VBei1F
+Content-Disposition: form-data; name="__RequestVerificationToken"
+
+CfDJ8ElRlKtk369DtX_oYPwa4WEUz5X_RJj7SjQi2okYMqUYxF9l2aA9tiPsldViZj_jWlZ07SwmPriqeVORnoJubvg0qQSi5c2IQTvqXI_BZhtYEAHBQrNdICPNW7Z4vG9pXRJpFjuR9zAliZcb_3auh7THzAZQ8Q-Sjh-hoBpEwbn8ILe6wQezC1-JlensFwxyPQ
+------WebKitFormBoundaryycVFZKL2n4VBei1F--
