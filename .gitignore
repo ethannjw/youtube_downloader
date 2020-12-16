@@ -1,3 +1,10 @@
+# windows executables
+*.exe
+
+# videos
+*.mp4
+*.mkv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
